@@ -10,34 +10,38 @@
 <body>
 	<main class="main">
 		<div class="slider">
+			<input type="radio" id="img1" class="slider__control" name="control" checked>
+			<input type="radio" id="img2" class="slider__control" name="control">
+			<input type="radio" id="img3" class="slider__control" name="control">
+			<input type="radio" id="img4" class="slider__control" name="control">
+
 			<ul class="slider__items">
-				<li class="slider__item" id="slide1">
+				<li class="slider__item slide">
 					<img src="./assets/img/img1.jpg" alt="mem image" class="slide__img">
 				</li>
-				<li class="slider__item" id="slide2">
+				<li class="slider__item  slide" id="slide2">
 					<img src="./assets/img/img2.jpg" alt="mem image" class="slide__img">
 				</li>
-				<li class="slider__item" id="slide3">
+				<li class="slider__item  slide" id="slide3">
 					<img src="./assets/img/img3.jpg" alt="mem image" class="slide__img">
 				</li>
-				<li class="slider__item" id="slide4">
+				<li class="slider__item  slide" id="slide4">
 					<img src="./assets/img/img4.jpg" alt="mem image" class="slide__img">
 				</li>
 			</ul>
-			
+
 			<div class="slider__controls">
-				<a href=""></a>
-				<input type="radio" id="img1" class="slider__control" name="control" checked>
-				<input type="radio" id="img2" class="slider__control" name="control">
-				<input type="radio" id="img3" class="slider__control" name="control">
-				<input type="radio" id="img4" class="slider__control" name="control">
+				<label for="img1"></label>
+				<label for="img2"></label>
+				<label for="img3"></label>
+				<label for="img4"></label>
 			</div>
-			
+						
 			<div class="slider__description">
-				<p class="slide__description">Хорошая компания. И проекты интересные</p>
-				<p class="slide__description">Она заставляла меня использовать Internet Explorer</p>
-				<p class="slide__description">Программирование - это безудержное веселье</p>
-				<p class="slide__description">Не хочу на фронт!</p>
+				<p class="slide__description description">Хорошая компания. И проекты интересные</p>
+				<p class="slide__description description">Она заставляла меня использовать Internet Explorer</p>
+				<p class="slide__description description">Программирование - это безудержное веселье</p>
+				<p class="slide__description description">Не хочу на фронт!</p>
 			</div>
 		</div>
 	</main>
