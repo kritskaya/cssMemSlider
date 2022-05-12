@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
 	<title>CSS Mem Slider</title>
 </head>
 <body>
@@ -30,19 +32,22 @@
 				</li>
 			</ul>
 
-			<div class="slider__controls">
-				<label for="img1"></label>
-				<label for="img2"></label>
-				<label for="img3"></label>
-				<label for="img4"></label>
+			<div class="wrapper">
+				<div class="slider__controls">
+					<label for="img1" tabindex="1"><span></span></label>
+					<label for="img2" tabindex="2"><span></span></label>
+					<label for="img3" tabindex="3"><span></span></label>
+					<label for="img4" tabindex="4"><span></span></label>
+				</div>
+				
+				<div class="slider__description">
+					<p class="slide__description description">Хорошая компания. И проекты интересные</p>
+					<p class="slide__description description">Она заставляла меня использовать Internet Explorer</p>
+					<p class="slide__description description">Программирование - это безудержное веселье</p>
+					<p class="slide__description description">Не хочу на фронт!</p>
+				</div>
 			</div>
-						
-			<div class="slider__description">
-				<p class="slide__description description">Хорошая компания. И проекты интересные</p>
-				<p class="slide__description description">Она заставляла меня использовать Internet Explorer</p>
-				<p class="slide__description description">Программирование - это безудержное веселье</p>
-				<p class="slide__description description">Не хочу на фронт!</p>
-			</div>
+			
 		</div>
 	</main>
 </body>
