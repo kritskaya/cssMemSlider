@@ -40,7 +40,7 @@ body {
 
 .main {
 	height: 100vh;
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	padding: 2rem;
 	display: flex;
@@ -151,6 +151,7 @@ body {
 }
 
 .slider__description {
+	margin-right: 1rem;
 	font-family: 'Kelly Slab', Arial;
 	font-size: 1.7rem;
 	font-weight: bold; 
