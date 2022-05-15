@@ -1,0 +1,41 @@
+
+@media (max-width: 767px) {
+	.main {
+		width: 95%;
+		padding: 1.5rem;
+	}
+
+	.slider__items {
+		height: 75%;
+	}
+
+	.slider__item {
+		padding: 1.5rem;
+	}
+	
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.slider__description {
+		padding-top: 1rem;
+		order: 1;
+		align-self: flex-start;
+		font-size: 1.5rem;	
+	}
+}
+
+@media (max-width: 424px) {
+	.main {
+		width: 95%;
+		padding: 0.5rem;
+	}
+
+	.slider__item {
+		padding: 1rem;
+	}
+
+	.slider__description {
+		font-size: 1.2rem;
+	}
+}

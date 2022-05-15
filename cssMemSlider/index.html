@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
+	<title>CSS Mem Slider</title>
+</head>
+<body>
+	<main class="main">
+		<div class="slider">
+			<input type="radio" id="img1" class="slider__control" name="control" checked>
+			<input type="radio" id="img2" class="slider__control" name="control">
+			<input type="radio" id="img3" class="slider__control" name="control">
+			<input type="radio" id="img4" class="slider__control" name="control">
+
+			<ul class="slider__items">
+				<li class="slider__item slide">
+					<img src="./assets/img/img1.jpg" alt="mem image" class="slide__img">
+				</li>
+				<li class="slider__item  slide" id="slide2">
+					<img src="./assets/img/img2.jpg" alt="mem image" class="slide__img">
+				</li>
+				<li class="slider__item  slide" id="slide3">
+					<img src="./assets/img/img3.jpg" alt="mem image" class="slide__img">
+				</li>
+				<li class="slider__item  slide" id="slide4">
+					<img src="./assets/img/img4.jpg" alt="mem image" class="slide__img">
+				</li>
+			</ul>
+
+			<div class="wrapper">
+				<div class="slider__controls">
+					<label for="img1" tabindex="1"><span></span></label>
+					<label for="img2" tabindex="2"><span></span></label>
+					<label for="img3" tabindex="3"><span></span></label>
+					<label for="img4" tabindex="4"><span></span></label>
+				</div>
+				
+				<div class="slider__description">
+					<p class="slide__description description">Хорошая компания. И проекты интересные</p>
+					<p class="slide__description description">Она заставляла меня использовать Internet Explorer</p>
+					<p class="slide__description description">Программирование - это безудержное веселье</p>
+					<p class="slide__description description">Не хочу на фронт!</p>
+				</div>
+			</div>
+			
+		</div>
+	</main>
+</body>
+</html>
