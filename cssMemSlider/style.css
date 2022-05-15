@@ -64,7 +64,7 @@ body {
 	width: 100%;
 	display: flex;
 	margin-bottom: 1.5rem;
-	box-shadow:	0 5px 20px rgba(0,0,0,0.3);
+	box-shadow:	0 0.3rem 1.5rem rgba(0,0,0,0.3);
 	overflow: hidden;
 }
 
@@ -115,7 +115,8 @@ body {
 #img2:checked ~ .wrapper .slider__controls>label:nth-child(2) span,
 #img3:checked ~ .wrapper .slider__controls>label:nth-child(3) span,
 #img4:checked ~ .wrapper .slider__controls>label:nth-child(4) span {
-	background-color: grey;
+	background-color: #333;
+	background-clip: content-box;
 }
 
 .slider__controls label {
@@ -134,21 +135,36 @@ body {
 }
 
 .slider__controls label:hover span{
-	background-color: #ccc;
+	background-color: #b3b3b3;
 	transition: background 0.5s;
 }
 
-.slider__controls label:focus span {
-	background-color: #000;
-}
 
 .slider__controls > label > span {
 	width: 1.2rem;
 	height: 1.2rem;
 	padding: 0.1rem;
 	border: 0.2rem solid grey;
-	border-radius: 50%;
+	border-radius: 50%;	
+	background-clip: border-box;
 }
+
+.slider__controls label:focus span {
+	animation: jump 0.7s;
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 
 .slider__description {
 	margin-right: 1rem;
